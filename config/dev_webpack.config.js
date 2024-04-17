@@ -6,22 +6,25 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-    entry: './src/new.ts',
+    entry: './src/main.ts',
     mode: 'development',
     output: {
         filename: 'main.js'
     },
     devServer: {
-      static: './dist',
-      port: 8080,
-      hot: true
-    },
-    devtool: 'inline-source-map',
+        static: './dist',
+        port: 8080,
+        hot: true,
+        client: {
+            logging: 'error',
+        }
+      },
+      devtool: 'inline-source-map',
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin(
             {
-                template: './src/index.pug',
+                template: './src/index_dev.pug',
                 filename: 'index.html',
                 title: 'Development'
             }
