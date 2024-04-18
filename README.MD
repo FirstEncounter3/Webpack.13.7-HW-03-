@@ -1,6 +1,6 @@
 ## Установка
 1. У вас уже должен быть установлен NPM
-2. Выполните git clone
+2. Выполните git clone https://github.com/FirstEncounter3/Webpack.13.7-HW-03-.git
 3. В командной строке введите npm install
 
 ## Запуск DEV или PROD окружений
