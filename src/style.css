@@ -1,3 +1,17 @@
 body {
-    background-color: chartreuse;
+    font-family: monospace;
+    background-color: black;
+    color: chartreuse;
+}
+
+a {
+    color: chartreuse;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+a:hover {
+    color: dodgerblue;
 }
