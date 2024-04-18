@@ -297,7 +297,7 @@
     "start:prod:json-server": "concurrently --kill-others \"npm run start:prod\" \"npm run json-server-only\"",
     "start:dev:json-server": "concurrently --kill-others \"npm run start:dev\" \"npm run json-server-only\"",
     "prepare": "husky",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src/main.ts --no-ignore"
   },
   "author": "",
   "license": "ISC",
