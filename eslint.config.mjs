@@ -9,4 +9,10 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReactConfig,
+  {
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"]
+    }
+  }
 ];
